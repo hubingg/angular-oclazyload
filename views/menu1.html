@@ -1,0 +1,7 @@
+<div ng-controller="menuCtr1">
+    这是二级目录
+    <div ng-repeat="menu in menuSon">
+    	<a ui-sref="{{menu.sref}}">{{menu.txt}}</a>
+    </div>
+    <div ui-view></div>	
+</div> 

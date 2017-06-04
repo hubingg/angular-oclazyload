@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin:0;
+}
+a{
+	text-decoration: none;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+#top{
+    height: 50px;
+    background-color: pink;
+}
+#bot{
+    height: 50px;
+    width: 100%;;
+    background-color: pink;
+    position: absolute;
+    bottom:0;
+}
+#con .menu li{
+}
+#con .menu li a{
+	display: block;
+	width: 300px;
+	height: 50px;
+	line-height: 40px;
+	text-align: center;
+	background: #ccc;
+	border:1px solid #000000;
+}

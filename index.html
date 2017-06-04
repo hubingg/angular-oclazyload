@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./lib/css/base.css">
+</head>
+<body>
+    <div ng-app="app">
+        <div id="top">this is head!</div>
+        <div id="con" ng-controller="menuCtr">{{num}}
+            <ul class="menu">
+                <li ng-repeat="menu in menus"><a ui-sref="{{menu.sref}}">{{menu.txt}}</a></li>
+            </ul>
+            <div ui-view=""></div>
+        </div>
+        <div id="bot">this is footer!</div>
+    </div>
+    <script src="./lib/js/angular.min.js"></script>
+    <script src="./lib/js/angular-ui-router.js"></script>
+    <script src="./lib/js/ocLazyLoad.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
